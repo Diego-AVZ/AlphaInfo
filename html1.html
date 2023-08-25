@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css1.css">
+</head>
+<body style="background-color: rgb(0, 0, 0); overflow: hidden;">
+
+    <div id="HOME" style="display: block;"> <!--HOME-->
+        <div id="enc"> <!--DIV encabezado, menu y logo-->
+            <img src="logo.png" id="logo"> <!--LOGO-->
+            <img src="webimg2.png" id="img2">
+            <img src="webimg2.png" id="img3">
+            <a href="http://google.com"><button id="p1">Docs</button></a>
+            <a href="http://google.com"><button id="p2">About Us</button></a>
+            <a href="http://google.com"><button id="p3">Free Content</button></a>
+            <a href="http://google.com"><button id="p4">Sell Info</button></a>
+        </div>
+
+        <div id="Buts"> <!--DIV que contiene todos los botones-->  <!-- NFT, Narrativas, Onchain, Smart Money Wallets...-->
+            <button id="b1">Trading <br> Signals</button>
+            <button id="b2">DeFi <br> Signals</button>
+            <button id="b3">Last News</button>
+            <button id="b4">Low Caps</button>
+            <button id="b5">Airdrops</button>
+            <button id="b6">Best <br> Altcoins</button>
+            <button id="b7">Trading <br> Smart Money</button>
+            <button id="b8">Programming</button>
+            <button id="b9">Crypto</button>
+        </div> <!--DIV que contiene todos los botones-->
+
+            <p id="type1">Information</p>
+            <p id="type2">Education</p>
+            <p id="type3">Investment</p>
+
+            <a href="http://google.com"><button id="p5">Twitter</button></a>
+            <a href="http://google.com"><button id="p6">Instagram</button></a>
+            <a href="http://google.com"><button id="p7">Telegram</button></a>
+            <a href="http://google.com"><button id="p8">Team</button></a>
+    </div> <!--/HOME-->
+
+
+    <div id="tradingviewWindow"></div>
+    
+    <div id="traSig" style="display: none;"> <!--TRADING SIGNALS-->
+        <img src="logo.png" id="logo"> <!--LOGO-->
+
+        <button id="wallet">Connect Wallet</button>
+
+        <div id="autoTrading">
+            <p style="font-weight: 600; text-shadow: 0vw 0vw 0vw rgb(173, 173, 173);">AutoTRADING</p>
+            <p>Deposit & Earn Automatically</p>
+
+            <button id="tradRisks">Risks & Conditions</button>
+            <button id="deposit">Deposit</button>
+        </div>
+
+        <img style="position: absolute; width: 2vw; margin-top: 94vh; margin-left: 2.2vw;" src="btc.png" >
+        <img style="position: absolute; width: 2vw; margin-top: 94vh; margin-left: 12.5vw;" src="eth.png" >
+        <p id="BitcoinPrice"></p>
+        <p id="EthereumPrice"></p>
+        <p id="EURUSD">EUR (No api key)</p>
+
+
+
+        <div id="DATA">
+            <div class="TradingData">
+                <p style="position:absolute; color:white; font-size: 1.2vw; bottom: -1vw;">Monthly Profit</p>
+                <p style="color:white; font-size: 2.5vw; font-weight: 700;">13%</p>
+            </div>
+            <div class="TradingData">
+                <p style="position:absolute; color:white; font-size: 1.2vw; bottom: -1vw;">Annual Profit</p>
+                <p style="color:white; font-size: 2.5vw; font-weight: 700;">47%</p>
+            </div>
+            <div class="TradingData">
+                <p style="position:absolute; color:white; font-size: 1.2vw; bottom: -1vw;">Accuracy</p>
+                <p style="color:white; font-size: 2.5vw; font-weight: 700;">83%</p>
+            </div>
+            <div class="TradingData">
+                <p style="position:absolute; color:white; font-size: 1.2vw; bottom: -1vw;">Most Traded</p>
+                <p style="color:white; font-size: 2vw; font-weight: 700;">BTC/USD</p>
+            </div>
+            <div class="TradingData">
+                <p style="position:absolute; color:white; font-size: 1.2vw; bottom: -1vw;">AutoTrading 30D</p>
+                <p style="color:white; font-size: 2.5vw; font-weight: 700;">8%</p>
+            </div>
+            <div class="TradingData">
+                <p style="position:absolute; color:white; font-size: 1.2vw; bottom: -1vw;">Profit:Loss ratio</p>
+                <p style="color:white; font-size: 2.5vw; font-weight: 700;">4:1</p>
+            </div>
+        
+    </div>
+
+        <div id="comments"> 
+
+            <object data="html2.html" type="text/html"></object>
+
+            <!---//////////////////////////////////////////////////////--->
+             <div class="commentText">
+                <div style="width:20vw; margin-left: 0.5vw; line-height: 1.5vw;">
+                    Trade ID: <a href="#Sig-BTC-00002" class="tradId">Sig-BTC-00002</a> <br>
+                    Close Trade: 100% <br>
+                    Profit: 2% <br> 
+                    Loss: 0% <br>
+                    Break Even: 0% <br> <br>
+                    Comments: <br>
+                    Profit is Profit!
+                
+                </div>
+                <div id="date">
+                     09:53 18/08/2023
+                </div>
+                <a href="#Sig-BTC-00002"><button  class="ShowTradeBut">
+                  View
+                </button></a>
+            </div> <!---/////////////////////////////////////////////////////////////////--->
+
+            <!---//////////////////////////////////////////////////////--->
+             <div class="commentText">
+                <div style="width:20vw; margin-left: 0.5vw; line-height: 1.5vw;">
+                    Trade ID: <a href="#Sig-BTC-00001" class="tradId">Sig-BTC-00001</a> <br>
+                    Close Trade: 100% <br>
+                    Profit: 2% <br> 
+                    Loss: 0% <br>
+                    Break Even: 0% <br> <br>
+                    Comments: <br>
+                    Profit is Profit!
+                
+                </div>
+                <div id="date">
+                     09:53 18/08/2023
+                </div>
+                <a href="#Sig-BTC-00001"><button  class="ShowTradeBut">
+                  View
+                </button></a>
+            </div> <!---/////////////////////////////////////////////////////////////////--->
+
+            <!---//////////////////////////////////////////////////////--->
+             <div class="commentText">
+                <div style="width:20vw; margin-left: 0.5vw; line-height: 1.5vw;">
+                    Trade ID: <a href="#Sig-ETH-00002" class="tradId">Sig-ETH-00002</a> <br>
+                    Close Trade: 100% <br>
+                    Profit: 2% <br> 
+                    Loss: 0% <br>
+                    Break Even: 0% <br> <br>
+                    Comments: <br>
+                    Profit is Profit!
+                
+                </div>
+                <div id="date">
+                     09:53 18/08/2023
+                </div>
+                <a href="#Sig-ETH-00002"><button  class="ShowTradeBut">
+                  View
+                </button></a>
+            </div> <!---/////////////////////////////////////////////////////////////////--->
+
+            <!---//////////////////////////////////////////////////////--->
+             <div class="commentText">
+                <div style="width:20vw; margin-left: 0.5vw; line-height: 1.5vw;">
+                    Trade ID: <a href="#Sig-ETH-00003" class="tradId">Sig-ETH-00003</a> <br>
+                    Close Trade: 100% <br>
+                    Profit: 2% <br> 
+                    Loss: 0% <br>
+                    Break Even: 0% <br> <br>
+                    Comments: <br>
+                    Profit is Profit!
+                
+                </div>
+                <div id="date">
+                     09:53 18/08/2023
+                </div>
+                <a href="#Sig-ETH-00003"><button  class="ShowTradeBut">
+                  View
+                </button></a>
+            </div> <!---/////////////////////////////////////////////////////////////////--->
+         
+         
+
+            
+            
+
+
+        </div>
+
+        <button id="ACT">
+                <p style="color:white; font-size: 1.3vw; font-weight: 700;">Actualizaciones y comentarios</p>
+        </button>
+
+        <button id="Estads">
+                <p style="color:white; font-size: 1.3vw; font-weight: 700;">Mostrar Estadisticas</p>
+        </button>
+
+        <div id="Cover">
+            <button id="SeeAllTrades">See All</button>
+        </div> 
+
+        <div id="signalsDiv"> <!--signals-->
+
+            
+
+            <!--
+                ····························
+                ·······INSTRUCIONES·········
+                ····························
+            -->
+
+    <!--  Copiar, pegar y seguir instrucciones, por favor no escriba sobre esta base:
+        From HERE ->
+
+    <div class="introSignal">
+        <img class="currency" src=" --- ">          <p style="display:none;">  Click dos veces sobre '---' y escriba: 'btc.png','eth.png','eur.png', ...  </p>
+        <div class="pair"> --- </div>               <p style="display:none;">  Click dos veces sobre '---' y escriba: El par a tradear: 'BTC/USD', 'ETH/USD', 'EUR/USD'  </p>
+        <div class="direction"> --- </div>          <p style="display:none;">  Click dos veces sobre '---' y escriba: 'LONG' o 'SHORT'  </p>
+        <div class="SL">Stop Loss:  $ ---  </div>   <p style="display:none;">  Click dos veces sobre '---' y escriba: El precio del Stop Loss  </p>
+        <div class="Entry">Entry:  $ ---  </div>    <p style="display:none;">  Click dos veces sobre '---' y escriba: El precio de la Entrada </p>
+        <div class="TP">Take Profit:  $ ---  </div> <p style="display:none;">  Click dos veces sobre '---' y escriba: El precio del Take Profit </p>
+        <div class="Prob">
+            <p class="prob"> Probability </p>
+            <p class="probHL"> --- </p>             <p style="display:none;">  Click dos veces sobre '---' y escriba: El exito% (0-100%) que crees que tiene la operación  </p>
+        </div>
+        <div class="Profit">
+            <p class="profText"> Profit </p>
+            <p class="prof"> --- </p>                <p style="display:none;">  Click dos veces sobre '---' y escriba: El % de beneficio hasta el TP si la operación tiene exito  </p>
+        </div>
+    </div>
+
+    ----------
+    ----------
+    ----------
+-->  
+            
+            <!-- ↓↓↓ PASTE HERE ↓↓↓ -->
+
+            <div class="introSignal" id="Sig-BTC-00001"> <!--///////////////////////////////////////////////////////////-->
+                <img class="currency" src=" btc.png " >
+                <div class="pair">BTC/USD</div>
+                                <img src="long.png" class="LongImg">
+                <div class="direction">LONG</div>
+                <div class="SL">Stop Loss:  $ 25,100</div> <div class="SLmark"></div>
+                <div class="Entry">Entry:  $ 25,400</div>
+                <div class="TP">Take Profit:  $ 28,300</div>   <div class="TPmark"></div> 
+                <div class="Prob">
+                   <p class="prob"> Probability </p>
+                   <p class="probHL"> 60% </p>
+                </div>
+                <div class="Profit">
+                   <p class="profText"> Profit </p>
+                   <p class="prof"> 30% </p>
+                </div>
+
+            </div> <!--///////////////////////////////////////////////////////////////////////////////-->
+
+            <div class="introSignal" id="Sig-ETH-00001"> <!--///////////////////////////////////////////////////////////-->
+                <img class="currency" src=" eth.png " >
+                <div class="pair">ETH/USD</div>
+                                <img src="short.png" class="ShortImg">
+                <div class="direction">SHORT</div>
+                <div class="SL">Stop Loss:  $ 2,100</div> <div class="SLmark"></div>
+                <div class="Entry">Entry:  $ 2,000</div>
+                <div class="TP">Take Profit:  $ 1,300</div>   <div class="TPmark"></div> 
+                <div class="Prob">
+                   <p class="prob"> Probability </p>
+                   <p class="probHL"> 70% </p>
+                </div>
+                <div class="Profit">
+                   <p class="profText"> Profit </p>
+                   <p class="prof"> 30% </p>
+                </div>
+
+            </div> <!--///////////////////////////////////////////////////////////////////////////////-->
+
+            <div class="introSignal" id="Sig-BTC-00002"> <!--///////////////////////////////////////////////////////////-->
+                <img class="currency" src=" btc.png " >
+                <div class="pair">BTC/USD</div>
+                                <img src="short.png" class="ShortImg">
+                <div class="direction">SHORT</div>
+                <div class="SL">Stop Loss:  $ 26,100</div> <div class="SLmark"></div>
+                <div class="Entry">Entry:  $ 26,000</div>
+                <div class="TP">Take Profit:  $ 23,300</div>   <div class="TPmark"></div> 
+                <div class="Prob">
+                   <p class="prob"> Probability </p>
+                   <p class="probHL"> 65% </p>
+                </div>
+                <div class="Profit">
+                   <p class="profText"> Profit </p>
+                   <p class="prof"> 24% </p>
+                </div>
+
+            </div> <!--///////////////////////////////////////////////////////////////////////////////-->
+
+            <div class="introSignal" id="Sig-ETH-00002"> <!--///////////////////////////////////////////////////////////-->
+                <img class="currency" src=" eth.png " >
+                <div class="pair">ETH/USD</div>
+                                <img src="long.png" class="LongImg">
+                <div class="direction">LONG</div>
+                <div class="SL">Stop Loss:  $ 2,100</div> <div class="SLmark"></div>
+                <div class="Entry">Entry:  $ 2,200</div>
+                <div class="TP">Take Profit:  $ 2,652</div>   <div class="TPmark"></div> 
+                <div class="Prob">
+                   <p class="prob"> Probability </p>
+                   <p class="probHL"> 70% </p>
+                </div>
+                <div class="Profit">
+                   <p class="profText"> Profit </p>
+                   <p class="prof"> 5% </p>
+                </div>
+
+            </div> <!--///////////////////////////////////////////////////////////////////////////////-->
+
+            <div class="introSignal" id="Sig-BTC-00003"> <!--///////////////////////////////////////////////////////////-->
+                <img class="currency" src=" eth.png " >
+                <div class="pair">ETH/USD</div>
+                                <img src="short.png" class="ShortImg">
+                <div class="direction">SHORT</div>
+                <div class="SL">Stop Loss:  $ 2,100</div> <div class="SLmark"></div>
+                <div class="Entry">Entry:  $ 2,000</div>
+                <div class="TP">Take Profit:  $ 1,300</div>   <div class="TPmark"></div> 
+                <div class="Prob">
+                   <p class="prob"> Probability </p>
+                   <p class="probHL"> 70% </p>
+                </div>
+                <div class="Profit">
+                   <p class="profText"> Profit </p>
+                   <p class="prof"> 30% </p>
+                </div>
+
+            </div> <!--///////////////////////////////////////////////////////////////////////////////-->
+
+            <div class="introSignal" id="Sig-BTC-00005"> <!--///////////////////////////////////////////////////////////-->
+                <img class="currency" src=" eth.png " >
+                <div class="pair">ETH/USD</div>
+                                <img src="short.png" class="ShortImg">
+                <div class="direction">SHORT</div>
+                <div class="SL">Stop Loss:  $ 2,100</div> <div class="SLmark"></div>
+                <div class="Entry">Entry:  $ 2,000</div>
+                <div class="TP">Take Profit:  $ 1,300</div>   <div class="TPmark"></div> 
+                <div class="Prob">
+                   <p class="prob"> Probability </p>
+                   <p class="probHL"> 70% </p>
+                </div>
+                <div class="Profit">
+                   <p class="profText"> Profit </p>
+                   <p class="prof"> 30% </p>
+                </div>
+
+            </div> <!--///////////////////////////////////////////////////////////////////////////////-->
+
+            <div class="introSignal" id="Sig-BTC-00056"> <!--///////////////////////////////////////////////////////////-->
+                <img class="currency" src=" eth.png " >
+                <div class="pair">ETH/USD</div>
+                                <img src="short.png" class="ShortImg">
+                <div class="direction">SHORT</div>
+                <div class="SL">Stop Loss:  $ 2,100</div> <div class="SLmark"></div>
+                <div class="Entry">Entry:  $ 2,000</div>
+                <div class="TP">Take Profit:  $ 1,300</div>   <div class="TPmark"></div> 
+                <div class="Prob">
+                   <p class="prob"> Probability </p>
+                   <p class="probHL"> 70% </p>
+                </div>
+                <div class="Profit">
+                   <p class="profText"> Profit </p>
+                   <p class="prof"> 30% </p>
+                </div>
+
+            </div> <!--///////////////////////////////////////////////////////////////////////////////-->
+
+            <div class="introSignal" id="Sig-BTC-0000567"> <!--///////////////////////////////////////////////////////////-->
+                <img class="currency" src=" eth.png " >
+                <div class="pair">ETH/USD</div>
+                                <img src="short.png" class="ShortImg">
+                <div class="direction">SHORT</div>
+                <div class="SL">Stop Loss:  $ 2,100</div> <div class="SLmark"></div>
+                <div class="Entry">Entry:  $ 2,000</div>
+                <div class="TP">Take Profit:  $ 1,300</div>   <div class="TPmark"></div> 
+                <div class="Prob">
+                   <p class="prob"> Probability </p>
+                   <p class="probHL"> 70% </p>
+                </div>
+                <div class="Profit">
+                   <p class="profText"> Profit </p>
+                   <p class="prof"> 30% </p>
+                </div>
+
+            </div> <!--///////////////////////////////////////////////////////////////////////////////-->
+
+            <div class="introSignal" id=""> <!--///////////////////////////////////////////////////////////-->
+                <div class="direction">NULL</div>
+            </div> <!--///////////////////////////////////////////////////////////////////////////////-->
+            <div class="introSignal" id=""> <!--///////////////////////////////////////////////////////////-->
+                <div class="direction">NULL</div>
+            </div> <!--///////////////////////////////////////////////////////////////////////////////-->
+            <div class="introSignal" id=""> <!--///////////////////////////////////////////////////////////-->
+                <div class="direction">NULL</div>
+            </div> <!--///////////////////////////////////////////////////////////////////////////////-->
+            <div class="introSignal" id=""> <!--///////////////////////////////////////////////////////////-->
+                <div class="direction">NULL</div>
+            </div> <!--///////////////////////////////////////////////////////////////////////////////-->
+
+
+
+            
+    
+        
+
+            
+
+            
+
+
+
+
+
+                        <!--NO MORE TRADING SIGNALS-->
+
+            
+            
+
+        </div>
+
+         <div id="Risks">
+            <div id="r1">
+                <p style="font-weight: 700;">Risk & Conditions AutoTRADING</p>
+            </div>
+        
+        </div>
+
+        <button id="varBTC"><p style="position: absolute; margin-left: 1vw; margin-top: -1.16vh; color: white; font-family: sans-serif; font-size: 1vw;">BTC</p></button>
+        <button id="varETH"><p style="position: absolute; margin-left: 1vw; margin-top: -1.16vh; color: white; font-family: sans-serif; font-size: 1vw;">ETH</p></button>
+        <button id="varEUR"><p style="position: absolute; margin-left: 1vw; margin-top: -1.16vh; color: white; font-family: sans-serif; font-size: 1vw;">EUR</p></button>
+
+
+        <button id="TradingView"> Open TradingView</button>
+        <button id="closeTradView"> Close TradingView</button>
+        
+
+            
+
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+   
+        
+        
+
+    </div> <!--/TRADING SIGNALS-->
+
+    <!-------------------------------------------------------------------------------------->
+     <!-------------------------------------------------------------------------------------->
+      <!-------------------------------------------------------------------------------------->
+
+    <div id="defiSig" style="display: none;"> <!--DEFI SIGNALS-->
+        <img src="logo.png" id="logo"> <!--LOGO-->
+
+        <button id="wallet2">Connect Wallet</button>
+
+        <div id="autoFarming">
+            <p style="font-weight: 600; text-shadow: 0vw 0vw 0vw rgb(173, 173, 173);">AutoFARMING</p>
+            <p>Deposit & Earn Automatically</p>
+
+            <button id="farmRisks">Risks & Conditions</button>
+            <a href="#signalDeFi0001"><button id="deposit2">Deposit</button></a>  <!--Prueba de boton para ir a ver la posicion que se cierra-->
+        </div>
+
+
+        <div id="Risks2">
+            <div id="r2">
+                <p style="font-weight: 700;">Risk & Conditions AutoTRADING</p>
+            </div>
+        </div>
+
+        <div id="DATA2">
+            <div class="FarmingData">
+                <p style="position:absolute; color:white; font-size: 1.2vw; bottom: -1vw;">Monthly Profit</p>
+                <p style="color:white; font-size: 2.5vw; font-weight: 700;">13%</p>
+            </div>
+            <div class="FarmingData">
+                <p style="position:absolute; color:white; font-size: 1.2vw; bottom: -1vw;">Annual Profit</p>
+                <p style="color:white; font-size: 2.5vw; font-weight: 700;">47%</p>
+            </div>
+            <div class="FarmingData">
+                <p style="position:absolute; color:white; font-size: 1.2vw; bottom: -1vw;">Accuracy</p>
+                <p style="color:white; font-size: 2.5vw; font-weight: 700;">83%</p>
+            </div>
+            <div class="FarmingData">
+                <p style="position:absolute; color:white; font-size: 1.2vw; bottom: -1vw;">Most Farmed</p>
+                <p style="color:white; font-size: 2vw; font-weight: 700;">BTC/USD</p>
+            </div>
+            <div class="FarmingData">
+                <p style="position:absolute; color:white; font-size: 1.2vw; bottom: -1vw;">AutoFarming 30D</p>
+                <p style="color:white; font-size: 2.5vw; font-weight: 700;">8%</p>
+            </div>
+            <div class="FarmingData">
+                <p style="position:absolute; color:white; font-size: 1.2vw; bottom: -1vw;">Impermanent Loss</p>
+                <p style="color:white; font-size: 2.5vw; font-weight: 700;">2% 30D</p>
+            </div>
+
+        </div>
+
+        <div id="signalsDiv2"> <!--signals-->
+
+            <!--
+                ····························
+                ·······INSTRUCIONES·········
+                ····························
+            -->
+
+    <!--  Copiar, pegar y seguir instrucciones, por favor no escriba sobre esta base:
+        From HERE ->
+
+    <div class="introSignal">
+        <img class="currency" src=" --- ">          <p style="display:none;">  Click dos veces sobre '---' y escriba: 'btc.png','eth.png','eur.png', ...  </p>
+        <div class="pair"> --- </div>               <p style="display:none;">  Click dos veces sobre '---' y escriba: El par a tradear: 'BTC/USD', 'ETH/USD', 'EUR/USD'  </p>
+        <div class="direction"> --- </div>          <p style="display:none;">  Click dos veces sobre '---' y escriba: 'LONG' o 'SHORT'  </p>
+        <div class="SL">Stop Loss:  $ ---  </div>   <p style="display:none;">  Click dos veces sobre '---' y escriba: El precio del Stop Loss  </p>
+        <div class="Entry">Entry:  $ ---  </div>    <p style="display:none;">  Click dos veces sobre '---' y escriba: El precio de la Entrada </p>
+        <div class="TP">Take Profit:  $ ---  </div> <p style="display:none;">  Click dos veces sobre '---' y escriba: El precio del Take Profit </p>
+        <div class="Prob">
+            <p class="prob"> Probability </p>
+            <p class="probHL"> --- </p>             <p style="display:none;">  Click dos veces sobre '---' y escriba: El exito% (0-100%) que crees que tiene la operación  </p>
+        </div>
+        <div class="Profit">
+            <p class="profText"> Profit </p>
+            <p class="prof"> --- </p>                <p style="display:none;">  Click dos veces sobre '---' y escriba: El % de beneficio hasta el TP si la operación tiene exito  </p>
+        </div>
+    </div>
+
+    ----------
+    ----------
+    ----------
+-->  
+            
+            <!-- ↓↓↓ PASTE HERE ↓↓↓ -->
+
+
+    <div class="introSignal2" id="signalDeFi0001">
+            <img class="currencyA" src="btc.png">          <p style="display:none;">  Click dos veces sobre '---' y escriba: 'btc.png','eth.png','usdt.png', ...  </p>
+            <img class="currencyB" src="eth.png">           <p style="display:none;">  Click dos veces sobre '---' y escriba: 'btc.png','eth.png','usdt.png', ...  </p>
+            <div class="pair2"> BTC/ETH </div>               <p style="display:none;">  Click dos veces sobre '---' y escriba: El par a farmear: 'BTC/USD', 'ETH/USD', 'EUR/USD'  </p>
+            <div class="where"> Uniswap v3 </div>          <p style="display:none;">  Click dos veces sobre '---' y escriba: 'Uniswap v3', 'Uniswap v2'  </p>
+            <div class="OpenClose"> Open Position </div>                 <p style="display:none;">  Click dos veces sobre '---' y escriba: 'Open' o 'Close'  </p>
+            <div class="lower">Lower Limit:  $ 21000  </div>     <p style="display:none;">  Click dos veces sobre '---' y escriba: El precio del Stop Loss  </p>
+            <div class="Entry2">Entry (around):  $ 23000  </div>       <p style="display:none;">  Click dos veces sobre '---' y escriba: El precio de la Entrada </p>
+            <div class="higher">Higher Limit:  $ 30000  </div>       <p style="display:none;">  Click dos veces sobre '---' y escriba: El precio del Take Profit </p>
+            <div class="Prob2">
+                <p class="prob2"> Out Prob </p>
+                <p class="probHL2"> 30% </p>             <p style="display:none;">  Click dos veces sobre '---' y escriba: El exito% (0-100%) que crees que tiene la operación  </p>
+            </div>
+            <div class="Profit">
+                <p class="profText"> APR </p>
+                <p class="prof"> 14% </p>                <p style="display:none;">  Click dos veces sobre '---' y escriba: El % de beneficio hasta el TP si la operación tiene exito  </p>
+            </div>
+            <div class="Estra">
+                <p class="Estrat"> strategy </p>
+                <p class="TypeEstra"> Long </p>                <p style="display:none;">  Click dos veces sobre '---' y escriba: Long, Short, 0 IL </p>
+            </div>
+    </div>
+    
+
+        
+
+</div> <!--DEFI SIGNALS-->
+
+
+
+    <script src="js1.js"></script>
+    
+</body>
+</html>
