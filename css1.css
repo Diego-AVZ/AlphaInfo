@@ -145,7 +145,7 @@
     
 }
 
-/* #b1{
+ #b1{
     position: absolute;
     width: 15vw;
     height: 15vh;
@@ -164,9 +164,9 @@
     opacity: 100%;
     animation: bMove 1s forwards;
 } #b1:hover{cursor:pointer; letter-spacing: 0.2vw; opacity: 100%; transition: ease, 0.3s; }
-#b1:active{letter-spacing: 0vw; transition: ease, 0.3s; box-shadow: 0vw 0vw 0.5vw rgba(200,200,200);} */
+#b1:active{letter-spacing: 0vw; transition: ease, 0.3s; box-shadow: 0vw 0vw 0.5vw rgba(200,200,200);} 
 
-#b1{
+/* #b1{
     position: absolute;
     width: 15vw;
     height: 15vh;
@@ -187,7 +187,7 @@
     opacity: 100%;
     animation: bMove 1s forwards;
 } #b1:hover{cursor:pointer; letter-spacing: 0.2vw; opacity: 100%; transition: ease, 0.3s; }
-#b1:active{letter-spacing: 0vw; transition: ease, 0.3s; box-shadow: 0vw 0vw 0.5vw rgba(200,200,200);}
+#b1:active{letter-spacing: 0vw; transition: ease, 0.3s; box-shadow: 0vw 0vw 0.5vw rgba(200,200,200);} */
 
 #b2{
     position: absolute;
