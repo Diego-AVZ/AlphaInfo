@@ -16,9 +16,40 @@ var type1 = document.getElementById("type1"); //info
 var type2 = document.getElementById("type2"); //edu
 var type3 = document.getElementById("type3"); //invest
 
+//CONNECT METAMASK PRINCIPAL __________________________________________
+
+var ConnectWallet1 = document.getElementById("ConnectWallet1");
+var Connected = false;
+var AddressesConnected;
+
+ConnectWallet1.addEventListener("click", async()=>{
+    if (typeof window.ethereum !== 'undefined') {
+      try {
+        const Accounts = await window.ethereum.request({method: 'eth_requestAccounts'});
+        console.log("MTMSK Connected");
+        AddressesConnected = Accounts[0];
+        console.log(AddressesConnected);
+        
+        document.getElementById("ConnectWallet1").innerText="Connected";
+
+        Connected = true;
+
+      } catch (error) {console.log("ERROR al Conectar MTMSK");}
+     } else {
+      console.log("MTMSK Not Detected");
+    }
+});
+
+//_______________________________________________________________________
+
 b1.addEventListener("click", function(){
-  HOME.style.display = "none";
-  traSig.style.display = "block";
+  if (AddressesConnected == 0x0183161ed061018990d651d48f51695f176f2581 || AddressesConnected == 0x8FEaaAbC744338773FdB819c59d97fd6b5e7F1D9 && Connected == true
+  ) {
+    HOME.style.display = "none";
+    traSig.style.display = "block";
+  } else {
+    console.log("Do Not Have Access");
+  }
 })
 
 b1.addEventListener("mouseover", function(){
@@ -215,11 +246,13 @@ b9.addEventListener("mouseout", function () {
 
 var tradRisks = document.getElementById("tradRisks");
 var Risks = document.getElementById("Risks");
+var r1 = document.getElementById("r1");
 
 tradRisks.addEventListener("mouseover", function(){
   Risks.style.display = "block";
   Risks.style.zIndex="9998";
   tradRisks.style.zIndex="9999";
+  r1.style.zIndex = "9999";
   tradingviewWindow.style.zIndex = "9996";
 })
 tradRisks.addEventListener("mouseout", function () {
@@ -366,3 +399,6 @@ new TradingView.widget({
   container_id: "tradingviewWindow",
 });
 };
+
+
+
