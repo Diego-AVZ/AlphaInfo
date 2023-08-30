@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css2.css">
+    <title>Alpha Info</title>
+    <link rel="stylesheet" type="text/css" href="css3.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
 </head>
 <body style="background-color: rgb(0, 0, 0); overflow: hidden; filter: invert(0);">
 
@@ -22,6 +23,8 @@
 
         <img src="webimg5.png" id="bgimg">
 
+        <div id="NoAccessMsg"><p style="position:absolute; text-align: center; margin-top: 0.1vw; margin-left: 2vw;">Do Not Have Access, <br>Please Connect <br> Wallet & Buy Access NFT</p></div> 
+
         <div id="Buts"> <!--DIV que contiene todos los botones-->  <!-- NFT, Narrativas, Onchain, Smart Money Wallets...-->
             <button id="b1">Trading <br> Signals</button>
             <button id="b2">DeFi <br> Signals</button>
@@ -33,6 +36,9 @@
             <button id="b8">Programming</button>
             <button id="b9">Crypto</button>
         </div> <!--DIV que contiene todos los botones-->
+
+        <button id="mint">Mint</button>
+        <button id="SwitchToArb" onclick="switchArbitrum()">Switch To Arbitrum</button>
 
             <p id="type1">Information</p>
             <p id="type2">Education</p>
@@ -567,6 +573,8 @@
 
 
     <script src="js1.js"></script>
+   
+
     
 </body>
 </html>
